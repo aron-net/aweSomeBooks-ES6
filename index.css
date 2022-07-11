@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("./images/booklist-bg.jpg");
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px;
+  width: 90%;
+  margin: auto;
+  background-color: rgba(235, 230, 230, 0.16);
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 10px solid transparent;
+  border-image: url("./images/border.png") 20 stretch;
+  width: 100%;
+  background-color: rgba(89, 84, 84, 0.3);
+  padding: 8px;
+  height: 15vh;
+}
+
+.nav-link {
+  list-style-type: none;
+  color: #fff;
+  padding: 5px;
+}
+
+.nav {
+  padding: 10px;
+}
+
+.nav-header {
+  background-image: url("./images/header_bg.jpg");
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 5px;
+}
+
+.date-container {
+  padding: 12px 10px;
+  width: 50%;
+}
+
+.date {
+  position: fixed;
+  padding: 1px;
+  color: rgb(244, 237, 237);
+  float: right;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+  margin-top: 15%;
+}
+
+#book-list {
+  border: 8px solid whitesmoke;
+  width: 100%;
+}
+
+.bookList {
+  border: 20px solid rgb(51, 47, 47);
+  border-image: url("./images/border.png") 25 round;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(17, 16, 16, 0.4);
+}
+
+.ar {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  line-height: 24px;
+  color: rgb(6, 7, 6);
+  padding: 10px;
+  background-image: url("./images/title_bg.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.list-book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 24px;
+  background-color: rgba(5, 6, 6, 0.6);
+  color: #fff;
+}
+
+.list-book:nth-child(even) {
+  background-color: rgba(250, 235, 235, 0.16);
+  color: rgb(0, 0, 0);
+}
+
+.delete {
+  width: 35%;
+  padding: 3px 10px;
+  border: 2px solid rgb(15, 14, 14);
+  box-shadow: 5px 5px 5px rgba(177, 116, 116, 0.7);
+  font-weight: 700;
+  font-size: 15px;
+  color: black;
+  height: 45px;
+  border-radius: 15px;
+  background-image: radial-gradient(circle, rgb(239, 116, 116), rgb(207, 111, 91), rgb(228, 84, 40));
+}
+
+.title-p {
+  padding: 3px;
+}
+
+.bookAdd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(203, 247, 243);
+  border: 30px solid white;
+  border-image: url("./images/border.png") 15 space;
+  width: 95%;
+  height: 35vh;
+}
+
+.add-book {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 35px;
+  text-align: center;
+  background-image: url("./images/title-bg.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#book-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 3px;
+}
+
+.input-container {
+  width: 95%;
+  padding: 5px;
+}
+
+input[type=text] {
+  padding: 5px;
+  width: 100%;
+  font-size: 18px;
+  color: black;
+}
+
+input::placeholder {
+  color: rgb(8, 8, 8, 0.4);
+  font-size: 18px;
+}
+
+#submit {
+  position: relative;
+  left: 80px;
+  padding: 5px 20px;
+  border: 2px solid rgb(8, 8, 8);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  font-weight: 900;
+  font-size: 15px;
+  height: 40px;
+  border-radius: 14px;
+  background-image: radial-gradient(circle, rgb(132, 239, 116), rgb(139, 207, 91), rgb(68, 144, 83));
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  border: 15px solid whitesmoke;
+  border-image: url(./images/border.png) 10 stretch;
+  background-color: #e2d5d5;
+  width: 95%;
+  margin: auto;
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-p {
+  font-size: 18px;
+  text-align: left;
+  padding: 10px;
+  width: 95%;
+}
+
+.contact-ul {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 98%;
+  padding: 5px;
+}
+
+.contact-li {
+  text-align: left;
+  width: 100%;
+  padding: 5px 10px;
+  list-style-type: circle;
+}
+
+.bgcolor {
+  color: rgb(11, 243, 255);
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  border: 15px solid whitesmoke;
+  border-image: url('./images/border.png') 6 round;
+  background-color: rgba(239, 245, 245, 0.5);
+  position: fixed;
+  bottom: 0;
+  width: 90%;
+  padding: 5px;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .body {
+    width: 85%;
+  }
+
+  .nav-link {
+    display: flex;
+    list-style-type: none;
+    width: 45%;
+    align-content: flex-end;
+    color: antiquewhite;
+    gap: 5%;
+  }
+
+  .nav {
+    border-right: 2px solid #d0b0b0;
+    padding: 2px 22px;
+    width: 25%;
+    font-size: 20px;
+  }
+
+  .nav-link > li:last-child {
+    border: none;
+  }
+
+  .date-container {
+    width: 100%;
+  }
+
+  .date {
+    position: relative;
+    float: right;
+  }
+
+  section {
+    margin: 0%;
+  }
+
+  .bookList {
+    width: 75%;
+    background-color: rgba(247, 238, 238, 0.2);
+    border-image: url("./images/border.png") 15 round;
+  }
+
+  .ar {
+    font-size: 65px;
+    padding: 25px;
+  }
+
+  .list-book {
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+  }
+
+  .delete {
+    width: 6%;
+    position: absolute;
+    right: 355px;
+  }
+
+  .title-p {
+    padding: 15px;
+  }
+
+  .bookAdd {
+    width: 65%;
+    height: 45vh;
+    border: 25px solid white;
+    border-image: url('./images/border.png') 20 space;
+  }
+
+  .add-book {
+    font-size: 65px;
+    padding: 5px;
+  }
+
+  .input-container {
+    width: 60%;
+  }
+
+  #submit {
+    left: 170px;
+    width: 13%;
+  }
+
+  .contact-info {
+    width: 75%;
+  }
+
+  .contact-p {
+    width: 50%;
+  }
+
+  .contact-ul {
+    width: 30%;
+  }
+
+  footer {
+    width: 85%;
+  }
+}
