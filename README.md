@@ -2,7 +2,7 @@
 
 # Awsome Books with ES6
 
-> Description the projecta Web app that store books information like title and author refactored the web app to use ES6 version
+> a Web app that store books information like title and author refactored the web app to use ES6 version
 
 
 ## Built With
@@ -25,6 +25,7 @@ step 1: Clone this repo locally using git in the command line and the following 
 git clone https://github.com/aron-helu/aweSomeBooks-ES6.git
 
 Step 2: run npm install to download the necessary modules.
+
 step 3: run npm build to load the project in your broswer.
 
 ### Prerequisites
