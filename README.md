@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://st1.zoom.us/web_client/5ccnbv4/html/externalLinkPage.html?ref=https://aron-helu.github.io/aweSomeBooks-ES6/)
+[Live Demo Link](https://aron-helu.github.io/aweSomeBooks-ES6/)
 
 
 ## Getting Started
